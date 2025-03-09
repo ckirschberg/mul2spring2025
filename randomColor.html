@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #colorBox {
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Click the button to change the color!</h2>
+    <div id="colorBox">Color Box</div>
+    <button>Change Color</button> <!-- Kald changeColor funktionen når man trykker på knappen -->
+
+    <script>
+        function changeColor() {
+            let colors = ['red', 'blue', 'green', 'yellow', 'purple', 'orange'];
+            let randomColor = colors[Math.floor(Math.random() * colors.length)];
+            
+            // Brug document.getElementById til at udvælge colorBox. Sæt dens baggrundsfarve til randomColor
+        }
+    </script>
+
+</body>
+</html>
