@@ -8,14 +8,21 @@
 </head>
 <body>
     <h2>Click the image to enlarge</h2>
-    <img src="https://www.operationkindness.org/wp-content/uploads/blog-kitten-nursery-operation-kindness.jpg" class="thumbnail" alt="Thumbnail">
+    <img onclick="openLightbox()" src="https://www.operationkindness.org/wp-content/uploads/blog-kitten-nursery-operation-kindness.jpg" class="thumbnail" alt="Thumbnail">
     
-    <div class="lightbox" id="lightbox">
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
         <span class="close">&times;</span>
         <img src="https://www.operationkindness.org/wp-content/uploads/blog-kitten-nursery-operation-kindness.jpg" alt="Full Size Image">
     </div>
 
     <script>
+        function openLightbox() {
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none'
+        }
+
         // Åbn og luk lightbox med funktioner.
         // Vælg elementet i DOM'en med document.getElementById
         // sæt display til flex for at vise det store billede
