@@ -32,7 +32,7 @@
 
     <h2>Click the button to change the color!</h2>
     <div id="colorBox">Color Box</div>
-    <button>Change Color</button> <!-- Kald changeColor funktionen når man trykker på knappen -->
+    <button onclick="changeColor()">Change Color</button> <!-- Kald changeColor funktionen når man trykker på knappen -->
 
     <script>
         function changeColor() {
@@ -40,6 +40,7 @@
             let randomColor = colors[Math.floor(Math.random() * colors.length)];
             
             // Brug document.getElementById til at udvælge colorBox. Sæt dens baggrundsfarve til randomColor
+            document.getElementById('colorBox').style.backgroundColor = randomColor;
         }
     </script>
 
