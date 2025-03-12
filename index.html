@@ -10,14 +10,14 @@
     <h2>Click the image to enlarge</h2>
     <img onclick="openLightbox()" src="https://www.operationkindness.org/wp-content/uploads/blog-kitten-nursery-operation-kindness.jpg" class="thumbnail" alt="Thumbnail">
     
-    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-        <span class="close">&times;</span>
+    <div class="lightbox" id="lightbox"  >
+        <span onclick="closeLightbox()" class="close">&times;</span>
         <img src="https://www.operationkindness.org/wp-content/uploads/blog-kitten-nursery-operation-kindness.jpg" alt="Full Size Image">
     </div>
 
     <script>
         function openLightbox() {
-            document.getElementById('lightbox').style.display = 'flex';
+            document.getElementById('lightbox').style.display = 'flex'
         }
         function closeLightbox() {
             document.getElementById('lightbox').style.display = 'none'
